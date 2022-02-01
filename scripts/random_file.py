@@ -11,6 +11,3 @@ def generate_shell_script():
     os.system("echo 'Some random text' >> " + os.path.expanduser("~/Desktop/random_file.txt"))
     # print success message
     print("Successfully generated random_file.txt in ~/Desktop/")
-
-if __name__ == "__main__":
-    generate_shell_script()

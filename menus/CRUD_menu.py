@@ -11,12 +11,16 @@ from crud.delete import delete_file
 
 # function that gives the user a menu with options from CRUD
 def crud_menu():
-    print("Please choose from the following options:")
-    print("1. Create a file")
-    print("2. Read a file")
-    print("3. Update a file")
-    print("4. Delete a file")
-    print("5. Exit")
+    print("""
+    ----------------------------------------------------
+    |                                                    |
+    |  1. Create file.                                   |
+    |  2. Read file.                                     |
+    |  3. Update file.                                   |
+    |  4. Delete file.                                   |
+    |  5. Exit.                                          |
+    ----------------------------------------------------
+    """)
     choice = input("Please enter your choice: ")
     if choice == "1":
         create_file()
