@@ -1,18 +1,16 @@
 #!/usr/bin/python3
 
-# import modules
+#import modules
 import sys
 
-# import all modules from crud
+# import CRUD modules
 from crud.create import create_file
 from crud.read import read_file
 from crud.update import update_file
 from crud.delete import delete_file
 
-# function that gives the user a menu
-# the menu allows the user to choose from the following options:
-
-def menu():
+# function that gives the user a menu with options from CRUD
+def crud_menu():
     print("Please choose from the following options:")
     print("1. Create a file")
     print("2. Read a file")
@@ -32,4 +30,4 @@ def menu():
         sys.exit()
     else:
         print("Invalid choice.")
-        menu()
+        crud_menu()
