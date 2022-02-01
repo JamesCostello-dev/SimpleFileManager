@@ -6,7 +6,9 @@ import os
 # fn to find absolute path of a file
 def path_finder():
     # get file name
+    print('----------------------------------------------------')
     file_name = input("Enter file name: ")
+    print('----------------------------------------------------')
     # search file system for file print result
     for root, dirs, files in os.walk("/Users/"):
         for file in files:
@@ -16,5 +18,7 @@ def path_finder():
                 print('----------------------------------------------------')
                 return
     # if file not found print error message
+    print('----------------------------------------------------')
     print("File not found.")
+    print('----------------------------------------------------')
     return
