@@ -10,4 +10,6 @@ def generate_shell_script():
     # echo random text to the file
     os.system("echo 'Some random text' >> " + os.path.expanduser("~/Desktop/random_file.txt"))
     # print success message
+    print("------------------------------------------------------")
     print("Successfully generated random_file.txt in ~/Desktop/")
+    print("------------------------------------------------------")
