@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+
 # import menu function
-from menu import menu
+from menus.menu import menu
 
 # main function to loop and run the program
 def main():

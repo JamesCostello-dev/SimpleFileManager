@@ -3,12 +3,11 @@
 # import modules
 import sys
 
-# import functions
-from create import create_file
-from read import read_file
-from update import update_file
-from delete import delete_file
-
+# import all modules from crud
+from crud.create import create_file
+from crud.read import read_file
+from crud.update import update_file
+from crud.delete import delete_file
 
 # function that gives the user a menu
 # the menu allows the user to choose from the following options:
