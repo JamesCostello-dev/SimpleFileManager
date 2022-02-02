@@ -12,4 +12,3 @@ def generate_shell_script():
     # print success message
     print("------------------------------------------------------")
     print("Successfully generated random_file.txt in ~/Desktop/")
-    print("------------------------------------------------------")

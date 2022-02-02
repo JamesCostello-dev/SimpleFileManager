@@ -17,7 +17,6 @@ def scripts_menu():
     # get user input
     print('----------------------------------------------------')
     choice = input("Enter choice: ")
-    print('----------------------------------------------------')
     # if user input is 1
     if choice == "1":
         # call path_finder fn
@@ -31,6 +30,5 @@ def scripts_menu():
         # print error message
         print('----------------------------------------------------')
         print("Invalid input.")
-        print('----------------------------------------------------')
         # call scripts_menu fn
         scripts_menu()

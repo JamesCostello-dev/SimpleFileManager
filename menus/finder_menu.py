@@ -2,6 +2,7 @@
 
 # import modoles
 import sys
+import menus.main_menu as main_menu
 
 # import finder from fn
 from finder.finder import path_finder
@@ -11,19 +12,20 @@ def finder_menu():
     print("""
     ----------------------------------------------------
     |                                                    |
-    |  1. Path Finder.                                   |
+    |  1. Path finder.                                   |
+    |  2. Main menu.                                          |
     |  2. Exit.                                          |
     ----------------------------------------------------
     """)
     print('----------------------------------------------------')
     choice = input("Please enter your choice: ")
-    print('----------------------------------------------------')
     if choice == "1":
         path_finder()
     elif choice == "2":
+        main_menu.main_menu()
+    elif choice == "3":
         sys.exit()
     else:
         print('----------------------------------------------------')
         print("Invalid choice.")
-        print('----------------------------------------------------')
         finder_menu()

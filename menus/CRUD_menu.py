@@ -23,7 +23,6 @@ def crud_menu():
     """)
     print('----------------------------------------------------')
     choice = input("Please enter your choice: ")
-    print('----------------------------------------------------')
     if choice == "1":
         create_file()
     elif choice == "2":
@@ -37,5 +36,4 @@ def crud_menu():
     else:
         print('----------------------------------------------------')
         print("Invalid choice.")
-        print('----------------------------------------------------')
         crud_menu()

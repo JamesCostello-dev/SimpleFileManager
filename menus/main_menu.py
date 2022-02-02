@@ -23,7 +23,6 @@ def main_menu():
     """)
     print('----------------------------------------------------')
     choice = input("Please enter your choice: ")
-    print('----------------------------------------------------')
     if choice == "1":
         crud_menu()
     elif choice == "2":
@@ -35,5 +34,4 @@ def main_menu():
     else:
         print('----------------------------------------------------')
         print("Invalid choice.")
-        print('----------------------------------------------------')
         main_menu()
