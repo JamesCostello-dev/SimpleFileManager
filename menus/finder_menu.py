@@ -9,12 +9,13 @@ from finder.finder import path_finder
 
 # finder_menu fn for different menu options
 def finder_menu():
+    print('----------------------------------------------------')
     print("""
     ----------------------------------------------------
     |                                                    |
     |  1. Path finder.                                   |
-    |  2. Main menu.                                          |
-    |  2. Exit.                                          |
+    |  2. Main menu.                                     |
+    |  3. Exit.                                          |
     ----------------------------------------------------
     """)
     print('----------------------------------------------------')

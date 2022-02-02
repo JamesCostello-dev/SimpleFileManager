@@ -2,6 +2,7 @@
 
 #import modules
 import sys
+import menus.main_menu as main_menu
 
 # import CRUD modules
 from crud.create import create_file
@@ -11,6 +12,7 @@ from crud.delete import delete_file
 
 # function that gives the user a menu with options from CRUD
 def crud_menu():
+    print('----------------------------------------------------')
     print("""
     ----------------------------------------------------
     |                                                    |
@@ -18,7 +20,8 @@ def crud_menu():
     |  2. Read file.                                     |
     |  3. Update file.                                   |
     |  4. Delete file.                                   |
-    |  5. Exit.                                          |
+    |  5. Main menu.                                     |
+    |  6. Exit.                                          |
     ----------------------------------------------------
     """)
     print('----------------------------------------------------')
@@ -32,6 +35,8 @@ def crud_menu():
     elif choice == "4":
         delete_file(filename=None)
     elif choice == "5":
+        main_menu.main_menu()
+    elif choice == "6":
         sys.exit()
     else:
         print('----------------------------------------------------')
