@@ -3,6 +3,7 @@
 # import modules
 import os
 
+# update needed w/ file path
 # write a function to update filetext and file name
 def update_file(filename, filetext):
     # get file name from user

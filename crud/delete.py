@@ -4,16 +4,16 @@ import os
 # write a function to delete a file
 
 
-def delete_file(filename):
-    # get file name from user
+def delete_file(path_and_filename):
+    # get user file path + file name
     print('----------------------------------------------------')
-    filename = input("Enter file name to delete: ")
+    path_and_filename = input("Enter path to file including file name: ")
     # check if the file exists
-    if os.path.isfile(filename):
+    if os.path.isfile(path_and_filename):
         # delete the file
-        os.remove(filename)
+        os.remove(path_and_filename)
         print('----------------------------------------------------')
-        print("File deleted: " + filename)
+        print("File deleted: " + path_and_filename)
     else:
         print('----------------------------------------------------')
-        print("File not found: " + filename)
+        print("File not found: " + path_and_filename)

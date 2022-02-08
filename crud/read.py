@@ -9,7 +9,7 @@ import sys
 def read_file():
     # ask user to enter a file name, then store it in a variable
     print('----------------------------------------------------')
-    file_name = input("Please enter a file name: ")
+    file_name = input("Please enter a path to file name: ")
     # open the file in read mode
     file_object = open(file_name, "r")
     # if file name is not found, print an error message

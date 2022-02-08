@@ -33,7 +33,7 @@ def crud_menu():
     elif choice == "3":
         update_file(filename=None, filetext=None)
     elif choice == "4":
-        delete_file(filename=None)
+        delete_file(path_and_filename=None)
     elif choice == "5":
         main_menu.main_menu()
     elif choice == "6":
