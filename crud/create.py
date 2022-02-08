@@ -9,10 +9,18 @@ import os
 # user input path
 
 def create_file():
-    # get user input for path
+    # get user input for path, if path doesn't exist, create it
     path = input("Enter path: ")
+    # loop and check if path exists
+    while os.path.exists(path) == False:
+        # if path doesn't exist, get user path again
+        path = input("Path doesn't exist. Enter path: ")
     # get user input for file name
     filename = input("Enter filename: ")
+    # check if file name exists
+    while os.path.exists(path + "/" + filename) == True:
+        # if file name exists, get user input again
+        filename = input("File name exists. Enter filename: ")
     # get user input for text
     filetext = input("Enter text: ")
     # complete file path + filename
