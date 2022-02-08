@@ -1,15 +1,25 @@
 #!/usr/bin/python3
-# write a function that reads a file and prints it to the screen
+
+# imports
+import os
+
+# write a function that reads a file
+# and writes the file to a user selected path
+# user input file name and text
+# user input path
+
 def create_file():
-    # ask user to enter a file name, then store it in a variable
-    print('----------------------------------------------------')
-    file_name = input("Please enter a file name: ")
-    # open the file in write mode
-    file_object = open(file_name, "w")
-    # ask user to enter text, then store it in a variable
-    print('----------------------------------------------------')
-    file_text = input("Please enter text: ")
-    # write the text to the file
-    file_object.write(file_text)
-    # close the file
-    file_object.close()
+    # get user input for path
+    path = input("Enter path: ")
+    # get user input for file name
+    filename = input("Enter filename: ")
+    # get user input for text
+    filetext = input("Enter text: ")
+    # complete file path + filename
+    complete_path = os.path.join(path, filename)
+    # open file
+    file = open(complete_path, "w")
+    # write text to file
+    file.write(filetext)
+    # close file
+    file.close()
