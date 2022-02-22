@@ -2,10 +2,6 @@
 
 # import modules
 import os
-import menus.finder_menu as finder_menu
-
-# fn to find absolute path of a file
-
 
 def path_finder():
     # get file name
@@ -19,10 +15,8 @@ def path_finder():
                 # print absolute path
                 print('----------------------------------------------------')
                 print("Path found: " + os.path.join(root, file))
-                # call finder menu
-                finder_menu.finder_menu()         
+            else:
+                continue
     # if file not found
     print('----------------------------------------------------')
     print("File not found.")
-    # call finder menu
-    finder_menu.finder_menu()      

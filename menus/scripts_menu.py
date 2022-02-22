@@ -29,7 +29,7 @@ def scripts_menu():
     # if user input is 2
     elif choice == "2":
         main_menu.main_menu()
-    elif cjoice == "3":
+    elif choice == "3":
         sys.exit()
     # if user input is invalid
     else:
