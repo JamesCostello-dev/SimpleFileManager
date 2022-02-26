@@ -19,9 +19,8 @@ def create_files(num):
     print('--------------------------------------------------------------------------------')
 
 if __name__ == '__main__':
-    # only one argument is allowed
     if len(sys.argv) != 2:
         print('Usage: python create_files.py <number of files>')
-        sys.exit(1)
+        create_files()
     else:
         create_files(int(sys.argv[1]))
